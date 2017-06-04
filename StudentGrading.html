@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+  <script type="text/javascript" src ="StudentGrading.js"></script>
+   <link rel="stylesheet" type="text/css" href="StudentGrading.css">
+    </head>
+<body>
+  <script src = "Assignment2.js"></script>
+   <link rel="stylesheet" type="text/css" href="Assignment2.css">
+  <table id="table1">
+    <caption>Student Assignment Grading</caption>
+      <tbody>
+      <tr>
+        <th>Name</th>
+        <th>ID</th>
+        <th>Assignments 1(%)</th>
+        <th>Final Grades(%)</th>
+      </tr>
+      <tr class = "students">
+        <td contenteditable = "true">-</td>
+        <td contenteditable = "true">-</td>
+       <td class="grades" contenteditable="true" onblur = "calculate()">-</td>
+        <td class="result">-</td>
+      </tr>
+    </tbody>
+  </table>
+<button class = "btn" onclick="calculate()">Calculate Average</button>
+<button class = "myBtn" onclick="addRows()">Add Rows</button>
+<button class = "bttn" onclick="addCols()">Add Columns</button>
+</body>
+</html>
